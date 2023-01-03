@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+<div id="root">
+    <div class="container1">
+        <div class="sx">
+            <div class="header1">
+                <div class="prima-fascia">
+                    <img src="wh/avatar_1.jpg" alt="">
+                    <p>Giuseppe Pini</p>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="main1">
+
+            </div>
+            <div class="main2">
+
+            </div>
+            <div class="footer1" >
+                <div class="container2" v-for="(contact, index) in contacts">
+                    <div class="img1">
+                        <img :src="'wh/avatar' + contact.avatar + '.jpg'" alt="">
+
+                    </div>
+                    <div class="scritta">
+                        <p>{{ contact.name }}</p>
+
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="dx">
+            <div class="header2">
+
+            </div>
+            <div class="main3">
+
+            </div>
+            <div class="footer2">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="main.js"></script>
+</body>
+</html>

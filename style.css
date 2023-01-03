@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #009688 20%, #DCDBD2 20% 80% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
+    height: 90%;
+    width: 80%;
+    position: relative;
+    background-color: white;
+}
+
+/* SX */
+
+.sx{
+    width: 35%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.header1, .main1{
+    height: 12%;
+    width: 100%;
+    background-color: azure;
+}
+.prima-fascia{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    float: left;
+}
+.prima-fascia img{
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.icon1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    float: right;
+}
+.icon1 i{
+    margin-right: 20px;
+
+}
+.main2{
+    height: 5%;
+    width: 100%;
+    background-color: bisque;
+}
+.footer1{
+    width: 100%;
+    height: 71%;
+    background-color: antiquewhite;
+}
+
+/* DX */
+
+.dx{
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: blanchedalmond;
+}
+
+.header2, .footer2{
+    height: 12%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.main3{
+    height: 76%;
+    width: 100%;
+    background-color: wheat;
+}
+
+/* ***************DEBUG**************** */
+.container1{
+    border: 2px solid black;
+}
+.sx{
+    border: 2px solid red;
+}
+.dx{
+    border: 2px solid yellow;
+}
+.header1, .main2, .footer2{
+    border: 2px solid blue;
+}
+.header2, .main1, .main3, .footer1{
+    border: 2px solid green;
+}
